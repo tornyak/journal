@@ -1,0 +1,58 @@
+Interrupting colleagues
+=======================
+
+Quinn's colleagues interrupt her all the time, so much so that she barely has
+time for her own work. Analysis is the first step toward solving a problem, so
+she has designed a simple program to help understand the causes of the
+interruptions.
+
+When her new program is complete, Quinn will be able to keep track of every
+interruption. She will log each interruption from her command line, with the
+name of the person who interrupted, the duration in minutes, and the reason for
+the interruption. Something like this:
+
+```
+$ journal log ralph 10 "asked me about test reports"
+$ journal log sara 5 "needed help with a SQL query"
+$ journal log ralph 17 "asked me again about test reports. aargh, why won't he shut up??"
+$ journal log lynn 13 "reported a bug"
+```
+
+Later, she will be able to list all the logged entries, like so:
+
+```
+$ journal list
+ralph 10 "asked me about test reports"
+sara   5 "needed help with SQL query"
+ralph 17 "asked me again about test reports. aargh, why won't he shut up??"
+lynn  13 "reported a bug"
+```
+
+She can also produce nice reports and even a hit list to show her boss.
+
+```
+$ journal total
+45
+
+$ journal hitlist
+ralph 27
+lynn 13
+sara 5
+```
+
+Unfortunately, since Quinn is completely swamped by all the interruptions, she
+has no time to actually build the program. You owe her a favor so you have
+offered to do it for her.
+
+Requirements
+------------
+
+* The program must be usable from a UNIX command line
+* It must be possible to log interruptions, list logged interruptions, and get
+  total interruption times by name.
+* The entries must be stored in a SQL database
+
+Quinn believes that this program will be immensely useful, so it will probably
+be extended and maintained for a long time. For this reason it is important
+that the code base is well-designed, clean and robust. Submit the code along
+with instructions for how to setup and run the program.
