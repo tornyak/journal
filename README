@@ -8,9 +8,9 @@ done via gorp package providing ORM
 
 Install:
 
-Assumed that Go is installed and $GOPATH properly set
+Assumed that Go is installed and $GOPATH properly set installation is simple:
 
-$ go get github.com/tornyak/quinn
+$ go get github.com/tornyak/journal
 
 If everything went fine binary will be in $GOPATH/bin and can be executed
 as any other command line tool.
